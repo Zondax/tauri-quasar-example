@@ -1,0 +1,30 @@
+{
+  "build": {
+    "distDir": "../dist/spa",
+    "devPath": "http://localhost:1337"
+  },
+  "ctx": {},
+  "tauri": {
+    "embeddedServer": {
+      "active": true
+    },
+    "bundle": {
+      "active": true
+    },
+    "whitelist": {
+      "all": true
+    },
+    "window": {
+      "title": "Tauri App"
+    },
+    "security": {
+      "csp": "default-src blob: data: filesystem: ws: wss: http: https: 'unsafe-eval' 'unsafe-inline'"
+    },
+    "edge": {
+      "active": true
+    },
+    "inliner": {
+      "active": false
+    }
+  }
+}
