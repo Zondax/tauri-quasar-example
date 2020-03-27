@@ -1,17 +1,27 @@
-# tauri-quasar-example
+# Tauri/Quasar - Proof of Concept
 
-```
-cd app
+## Preconditions
+```bash
 yarn
-quasar dev
-```
-in another terminal
-```
-cd app
-yarn tauri dev
 ```
 
-License:
-Copyright (c) 2020 Daniel Thompson-Yvetot
+## Development
 
-Dual Licensed MIT / Apache 2
+Start the frontend in development mode (hot-code reloading, error reporting, etc.).
+
+- Frontend: in terminal 1, run:
+    ```bash
+    quasar dev
+    ```
+- Backend: in terminal 2, run:
+    ```
+    yarn tauri dev
+    ```
+
+- To customize configuration see [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
+## Production build
+    ```bash
+    yarn quasar build
+    yarn tauri build
+    ```
